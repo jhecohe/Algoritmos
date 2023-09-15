@@ -1,9 +1,11 @@
+import java.util.HashMap;
+
 import org.junit.jupiter.api.Test;
 
 public class sumTargetNum {
 
 	@Test
-	void returnIndexes() {
+	void returnIndexesSum() {
 		/*
 		 * 2. Given an array of integers "nums" and an integer "target", return indices of the two numbers such that they add up to "target".
 
@@ -21,10 +23,17 @@ public class sumTargetNum {
 		int target = 22;
 		
 		int[] numbers = new int[]{2,7,11,15};
+		HashMap<Integer, Integer> numMap = new HashMap<Integer, Integer>();
 		
-		for (int i = 1; i < numbers.length; i++) {
-			if(numbers[i-1]+numbers[i] == target) {
-				System.out.println(i-1 + ":" +i);
+		for (int i = 0; i < numbers.length; i++) {
+			numMap.put(numbers[i], i);
+		}
+		
+		for (int i = 0; i < numbers.length; i++) {
+			int numToFind = target - numbers[i];
+			if(numMap.containsKey(numToFind) && numMap.get(numToFind) != i) {
+				System.out.println(numMap.get(numToFind)+":"+i);
+				break;
 			}
 		}
 	}

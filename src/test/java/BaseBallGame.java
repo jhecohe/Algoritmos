@@ -35,8 +35,7 @@ public class BaseBallGame {
             }
         }
 
-        for (Integer num :
-                values) {
+        for (Integer num :values) {
             result += num;
         }
 
