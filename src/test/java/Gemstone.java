@@ -39,14 +39,5 @@ public class Gemstone {
 		}	
 		
 		System.out.println(counter);
-//		for (int i = 1; i < rocks.size(); i++) {
-//			Arrays.sort(rocks.get(i-1).toCharArray());
-//			Arrays.sort(rocks.get(i).toCharArray());
-//			for (int j = 0; j < rocks.get(j).length(); j++) {
-//				if(rocks.get(i).charAt(j) == rocks.get(i).charAt(j)) {
-//					
-//				}
-//			}
-//		}
 	}
 }
