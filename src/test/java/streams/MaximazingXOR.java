@@ -10,8 +10,8 @@ public class MaximazingXOR {
 	public void maximizingXor() {
 		// https://www.hackerrank.com/challenges/maximizing-xor/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=7-day-campaign&h_r=next-challenge&h_v=zen
 
-		int l = 10;
-		int r = 15;
+		int l = 11;
+		int r = 12;
 		
 		int max = Integer.MIN_VALUE;
 		System.out.println(max);
@@ -31,3 +31,24 @@ public class MaximazingXOR {
 		assertEquals(7, max);
 	}
 }
+
+/*
+Givent two integers, l and r, find the maximal value of a xor b, written a ^ b, where a and b satisfy the following condition:
+l <= a <= b <= r
+For example, if l = 11 and r = 12, then the possible values of a and b are:
+
+11 ^ 11 = 0
+11 ^ 12 = 7
+12 ^ 12 = 0
+
+Our maximum value is 7.
+Function Description
+Complete the maximizingXor function in the editor below. It must return an integer representing the maximum value calculated.
+maximizingXor has the following parameter(s):
+l: an integer, the lower bound, inclusive
+r: an integer, the upper bound, inclusive
+
+Input Format
+The first line contains the integer l.
+The second line contains the integer r. 
+ */
